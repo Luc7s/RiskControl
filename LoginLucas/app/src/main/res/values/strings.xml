@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">LoginMatheus</string>
+
+    <string-array name="classificacoes_risco">
+        <item>Leve</item>
+        <item>Médio</item>
+        <item>Grave</item>
+    </string-array>
+</resources>

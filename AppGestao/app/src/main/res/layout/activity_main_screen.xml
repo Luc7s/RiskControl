@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:text="Gestão de riscos"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#1B0A4A"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/buttonPendentes"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="120dp"
+        android:text="Pendentes"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_background" />
+
+    <Button
+        android:id="@+id/buttonResolvidos"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="Resolvidos"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_background" />
+
+    <Button
+        android:id="@+id/buttonSair"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="70dp"
+        android:text="Sair"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_red" />
+</LinearLayout>

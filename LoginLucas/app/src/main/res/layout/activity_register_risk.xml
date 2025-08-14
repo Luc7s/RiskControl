@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reportar novo risco"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#1B0A2A"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center_horizontal" />
+
+        <EditText
+            android:id="@+id/edtDescricao"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="30dp"
+            android:hint="Descrição do risco"
+            android:inputType="textMultiLine"
+            android:background="@drawable/edittext_border"
+            android:minLines="5"
+            android:padding="12dp" />
+
+        <Spinner
+            android:id="@+id/spinnerClassificacao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:entries="@array/classificacoes_risco"
+            android:background="@android:color/transparent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Toque no mapa para marcar o local do risco:"
+            android:textColor="#1B0A2A"
+            android:layout_marginTop="24dp" />
+
+        <FrameLayout
+            android:id="@+id/mapContainer"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="12dp">
+
+            <ImageView
+                android:id="@+id/imgMapa"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/mapa_default"
+                android:scaleType="fitXY"
+                android:contentDescription="Mapa da empresa"
+                android:background="@android:color/darker_gray" />
+
+            <View
+                android:id="@+id/pontoMarcado"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:background="@drawable/ponto_vermelho"
+                android:visibility="invisible" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/txtCoordenadas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nenhum ponto selecionado"
+            android:textColor="#1B0A2A"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:id="@+id/btnRegistrar"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="Reportar"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_background"
+            android:layout_marginTop="40dp"/>
+
+        <Button
+            android:id="@+id/btnVoltar"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="Voltar"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_background"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+</ScrollView>

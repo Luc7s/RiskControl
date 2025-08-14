@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textDescricao"
+            android:text="Descrição:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textDataHora"
+            android:text="Data:"
+            android:textSize="16sp"
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textClassificacao"
+            android:text="Classificação:"
+            android:textSize="16sp"
+            android:layout_marginTop="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="Localização do risco:"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <FrameLayout
+            android:id="@+id/mapContainer"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:id="@+id/imageMapa"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/mapa_default"
+                android:scaleType="fitXY"
+                android:background="@android:color/darker_gray" />
+
+            <View
+                android:id="@+id/pontoMarcado"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:background="@drawable/ponto_vermelho"
+                android:visibility="invisible" />
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/btnSolucionado"
+            android:text="SOLUCIONADO"
+            android:layout_marginTop="40dp"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnVoltar"
+            android:text="Voltar"
+            android:layout_marginTop="16dp"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+</ScrollView>
